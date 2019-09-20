@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">ionic-app-base</string>
+    <string name="title_activity_main">ionic-app-base</string>
+    <string name="package_name">com.edgetaekwondo.quizapp</string>
+    <string name="fileprovider_authority">com.edgetaekwondo.quizapp.fileprovider</string>
+    <string name="custom_url_scheme">com.edgetaekwondo.quizapp</string>
+</resources>

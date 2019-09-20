@@ -1,0 +1,10 @@
+# Links
+
+- https://www.joshmorony.com/adding-icons-splash-screens-launch-images-to-capacitor-projects
+-
+
+# Commands
+
+- npm run build
+- ionic capacitor copy android // Write comment here
+- npx cap open android // Launch Android Studio

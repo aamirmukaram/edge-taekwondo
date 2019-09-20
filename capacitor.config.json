@@ -1,0 +1,11 @@
+{
+  "appId": "com.edgetaekwondo.quizapp",
+  "appName": "ionic-app-base",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+    }
+  }
+}
