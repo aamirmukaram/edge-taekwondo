@@ -1,0 +1,24 @@
+# Commands
+
+- ionic build
+
+# Manually add the Android project using
+- npx cap add android
+
+
+# The sync command updates dependencies, and copies any web assets to your project.
+- npx cap sync
+
+
+# Copy web assets only, which is faster if you know you don't need to update native dependencies.
+- npx cap copy
+
+
+# Open the project in Android Studio, run
+- npx cap open android
+
+
+
+
+
+
