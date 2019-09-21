@@ -20,12 +20,12 @@
   --ion-color-secondary-tint: #24d6ea;
 
   /** tertiary **/
-  --ion-color-tertiary: #7044ff;
-  --ion-color-tertiary-rgb: 112, 68, 255;
-  --ion-color-tertiary-contrast: #ffffff;
-  --ion-color-tertiary-contrast-rgb: 255, 255, 255;
-  --ion-color-tertiary-shade: #633ce0;
-  --ion-color-tertiary-tint: #7e57ff;
+  --ion-color-tertiary: #feecd4;
+  --ion-color-tertiary-rgb: 254, 236, 212;
+  --ion-color-tertiary-contrast: #000000;
+  --ion-color-tertiary-contrast-rgb: 0, 0, 0;
+  --ion-color-tertiary-shade: #e0d0bb;
+  --ion-color-tertiary-tint: #feeed8;
 
   /** success **/
   --ion-color-success: #10dc60;
@@ -75,6 +75,32 @@
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
 
-  /* Set the background of the entire app */
+
+  /** Background and Text step colors **/
   --ion-background-color: #222428;
+  --ion-background-color-rgb: 34, 36, 40;
+
+  --ion-text-color: #ee2f25;
+  --ion-text-color-rgb: 238, 47, 37;
+
+  --ion-color-step-50: #2c2528;
+  --ion-color-step-100: #362528;
+  --ion-color-step-150: #412628;
+  --ion-color-step-200: #4b2627;
+  --ion-color-step-250: #552727;
+  --ion-color-step-300: #5f2727;
+  --ion-color-step-350: #692827;
+  --ion-color-step-400: #742827;
+  --ion-color-step-450: #7e2927;
+  --ion-color-step-500: #882a27;
+  --ion-color-step-550: #922a26;
+  --ion-color-step-600: #9c2b26;
+  --ion-color-step-650: #a72b26;
+  --ion-color-step-700: #b12c26;
+  --ion-color-step-750: #bb2c26;
+  --ion-color-step-800: #c52d26;
+  --ion-color-step-850: #cf2d25;
+  --ion-color-step-900: #da2e25;
+  --ion-color-step-950: #e42e25;
+
 }

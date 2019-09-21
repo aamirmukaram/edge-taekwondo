@@ -10,7 +10,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "capacitor-copy-android": "ionic capacitor copy android"
+    "build-android": "ionic build && ionic capacitor copy android"
   },
   "private": true,
   "dependencies": {
