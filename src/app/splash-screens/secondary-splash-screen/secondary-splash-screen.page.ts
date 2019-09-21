@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { fromEvent, Subscription } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-secondary-splash-screen',
@@ -7,28 +7,28 @@ import { fromEvent, Subscription } from 'rxjs';
   styleUrls: ['./secondary-splash-screen.page.scss'],
 })
 export class SecondarySplashScreenPage implements OnInit {
-  // private backButton$: Subscription = null;
+  readonly TIMEOUT: number = 3000;
+  private redirectTimeout = null;
 
-  constructor() {
+  constructor(private router: Router) {
   }
 
   ngOnInit() {
   }
 
-  // ionViewWillLeave() {
-  //   this.backButton$.unsubscribe();
-  // }
-  //
-  // ionViewDidEnter() {
-  //   this.bindBackButton();
-  // }
-  //
-  // private bindBackButton() {
-  //   this.backButton$ = fromEvent(document, 'backbutton')
-  //     .subscribe((e) => {
-  //       console.log(e);
-  //       // alert(e);
-  //     });
-  // }
+  ionViewWillLeave() {
+    clearTimeout(this.redirectTimeout);
+  }
+
+  ionViewDidEnter() {
+    this.redirectTimeout = setTimeout(() => {
+      this.redirectToSecondaryPage();
+    }, this.TIMEOUT);
+  }
+
+  private redirectToSecondaryPage() {
+    clearTimeout(this.redirectTimeout);
+    this.router.navigate(['/select-level']);
+  }
 
 }

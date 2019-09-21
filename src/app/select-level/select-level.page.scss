@@ -1,0 +1,87 @@
+$yellow: #FFFF00;
+$green: #008000;
+$blue: #0000FF;
+$red: #FF0000;
+$black: #000000;
+
+
+.white-background {
+  --background: var(--ion-color-primary-contrast);
+  --background-hover: var(--ion-color-primary-contrast);
+  --color: var(--ion-color-dark);
+}
+
+.yellow-background {
+  --background: #{$yellow};
+  --background-hover: #{$yellow};
+  --color: var(--ion-color-dark);
+}
+
+.green-background {
+  --background: #{$green};
+  --background-hover: #{$green};
+  --color: var(--ion-color-dark);
+}
+
+.blue-background {
+  --background: #{$blue};
+  --background-hover: #{$blue};
+  --color: var(--ion-color-dark);
+}
+
+.red-background {
+  --background: #{$red};
+  --background-hover: #{$red};
+  --color: var(--ion-color-dark);
+}
+
+.black-background {
+  --background: #{$black};
+  --background-hover: #{$black};
+  --color: var(--ion-color-primary-contrast);
+  border: 2px solid #ffffff;
+}
+
+.stripe {
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 20px;
+
+    top: 0;
+    right: 10%;
+  }
+
+  &.stripe-yellow {
+    &:after {
+      background: $yellow;
+    }
+  }
+
+  &.stripe-green {
+    &:after {
+      background: $green;
+    }
+  }
+
+  &.stripe-blue {
+    &:after {
+      background: $blue;
+    }
+  }
+
+  &.stripe-red {
+    &:after {
+      background: $red;
+    }
+  }
+
+  &.stripe-black {
+    &:after {
+      background: $black;
+    }
+  }
+}
