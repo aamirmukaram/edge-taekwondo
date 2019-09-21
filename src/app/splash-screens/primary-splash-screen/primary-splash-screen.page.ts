@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { fromEvent, Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-primary-splash-screen',
@@ -7,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PrimarySplashScreenPage implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

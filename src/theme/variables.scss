@@ -5,9 +5,9 @@
 :root {
   /** primary **/
   --ion-color-primary: #ee2f25;
-  --ion-color-primary-rgb: 238,47,37;
+  --ion-color-primary-rgb: 238, 47, 37;
   --ion-color-primary-contrast: #ffffff;
-  --ion-color-primary-contrast-rgb: 255,255,255;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
   --ion-color-primary-shade: #d12921;
   --ion-color-primary-tint: #f0443b;
 
@@ -74,4 +74,7 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  /* Set the background of the entire app */
+  --ion-background-color: #222428;
 }
