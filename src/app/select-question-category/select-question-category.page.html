@@ -1,16 +1,24 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Select Question Category</ion-title>
+    </ion-toolbar>
+</ion-header>
+
 <ion-content>
     <ion-grid class="height-100">
         <ion-row class="height-100">
             <ion-col size-sm="4" size-xs="6">
-                <ion-button class="ion-text-wrap height-100" expand="full">Vocabulary</ion-button>
+                <ion-button class="ion-text-wrap height-100" expand="full"
+                            [routerLink]="['/question', selectedLevel, 10]"
+                            [queryParams]="{'isLowerBeltsIncluded': isLowerBeltsIncluded}">Vocabulary
+                </ion-button>
             </ion-col>
 
             <ion-col size-sm="4" size-xs="6">
-                <ion-button class="ion-text-wrap height-100" expand="full">Patterns</ion-button>
-            </ion-col>
-
-            <ion-col size-sm="4" size-xs="6">
-                <ion-button class="ion-text-wrap height-100" expand="full" disabled>sss</ion-button>
+                <ion-button class="ion-text-wrap height-100" expand="full"
+                            [routerLink]="['/question', selectedLevel, 20]"
+                            [queryParams]="{'isLowerBeltsIncluded': isLowerBeltsIncluded}">Patterns
+                </ion-button>
             </ion-col>
 
             <ion-col size-sm="4" size-xs="6">

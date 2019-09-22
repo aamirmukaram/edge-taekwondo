@@ -37,7 +37,6 @@ export const questionsList = [
     questions: [
       {
         questionCategoryId: 10,
-        questionCategoryDisabled: false,
         questionTypeId: 10,
         question: {
           text: 'This is a MCQs Question',

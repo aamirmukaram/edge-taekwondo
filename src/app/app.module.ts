@@ -11,7 +11,7 @@ import { CommonModule } from './common.module';
 
 import { AppComponent } from './app.component';
 import { SelectLevelPage } from './select-level/select-level.page';
-import { SelectQuestionCategoryPage } from './select-test-type/select-question-category.page';
+import { SelectQuestionCategoryPage } from './select-question-category/select-question-category.page';
 
 @NgModule({
   declarations: [AppComponent, SelectLevelPage, SelectQuestionCategoryPage],
