@@ -6,14 +6,17 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 
-import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { CommonModule } from './common.module';
+
+import { AppComponent } from './app.component';
 import { SelectLevelPage } from './select-level/select-level.page';
+import { SelectTestTypePage } from './select-test-type/select-test-type.page';
 
 @NgModule({
-  declarations: [AppComponent, SelectLevelPage],
+  declarations: [AppComponent, SelectLevelPage, SelectTestTypePage],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot({ hardwareBackButton: false }), AppRoutingModule],
+  imports: [BrowserModule, IonicModule.forRoot({ hardwareBackButton: false }), CommonModule, AppRoutingModule],
   providers: [
     StatusBar,
     SplashScreen,

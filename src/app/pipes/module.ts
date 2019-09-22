@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 
-const COMMON_PIPES = [];
+const PIPES = [];
 
 @NgModule({
-  declarations: COMMON_PIPES,
-  exports: COMMON_PIPES,
+  declarations: PIPES,
+  exports: PIPES,
   providers: [],
 })
 export class CommonPipesModule {}

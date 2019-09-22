@@ -4,7 +4,7 @@
 
         <ion-item slot="primary">
             <ion-label>Include lower belts</ion-label>
-            <ion-checkbox slot="end"></ion-checkbox>
+            <ion-checkbox [(ngModel)]="isLowerBeltsIncluded" slot="end"></ion-checkbox>
         </ion-item>
 
     </ion-toolbar>
@@ -14,97 +14,136 @@
     <ion-grid>
         <ion-row>
             <ion-col size-sm="8" offset-sm="2">
-                <ion-button expand="full" class="white-background">White Belt</ion-button>
+                <ion-button expand="full" class="ion-text-wrap white-background"
+                            [routerLink]="['/select-test-type', '10']"
+                            [queryParams]="{'isLowerBeltsIncluded': isLowerBeltsIncluded}">
+                    White Belt
+                </ion-button>
             </ion-col>
         </ion-row>
 
         <ion-row>
             <ion-col size-sm="8" offset-sm="2">
-                <ion-button expand="full" class="white-background stripe stripe-yellow">Yellow Stripe</ion-button>
+                <ion-button expand="full" class="white-background stripe stripe-yellow"
+                            [routerLink]="['/select-test-type', '20']"
+                            [queryParams]="{'isLowerBeltsIncluded': isLowerBeltsIncluded}">Yellow Stripe
+                </ion-button>
             </ion-col>
         </ion-row>
 
         <ion-row>
             <ion-col size-sm="8" offset-sm="2">
-                <ion-button expand="full" class="yellow-background">Yellow Belt</ion-button>
+                <ion-button expand="full" class="yellow-background" [routerLink]="['/select-test-type', '30']"
+                            [queryParams]="{'isLowerBeltsIncluded': isLowerBeltsIncluded}">Yellow Belt
+                </ion-button>
             </ion-col>
         </ion-row>
 
         <ion-row>
             <ion-col size-sm="8" offset-sm="2">
-                <ion-button expand="full" class="yellow-background stripe stripe-green">Green Stripe</ion-button>
+                <ion-button expand="full" class="yellow-background stripe stripe-green"
+                            [routerLink]="['/select-test-type', '40']"
+                            [queryParams]="{'isLowerBeltsIncluded': isLowerBeltsIncluded}">Green Stripe
+                </ion-button>
             </ion-col>
         </ion-row>
 
         <ion-row>
             <ion-col size-sm="8" offset-sm="2">
-                <ion-button expand="full" class="green-background">Green Belt</ion-button>
+                <ion-button expand="full" class="green-background" [routerLink]="['/select-test-type', '50']"
+                            [queryParams]="{'isLowerBeltsIncluded': isLowerBeltsIncluded}">Green Belt
+                </ion-button>
             </ion-col>
         </ion-row>
 
         <ion-row>
             <ion-col size-sm="8" offset-sm="2">
-                <ion-button expand="full" class="green-background stripe stripe-blue">Blue Stripe</ion-button>
+                <ion-button expand="full" class="green-background stripe stripe-blue"
+                            [routerLink]="['/select-test-type', '60']"
+                            [queryParams]="{'isLowerBeltsIncluded': isLowerBeltsIncluded}">Blue Stripe
+                </ion-button>
             </ion-col>
         </ion-row>
 
         <ion-row>
             <ion-col size-sm="8" offset-sm="2">
-                <ion-button expand="full" class="blue-background">Blue Belt</ion-button>
+                <ion-button expand="full" class="blue-background" [routerLink]="['/select-test-type', '70']"
+                            [queryParams]="{'isLowerBeltsIncluded': isLowerBeltsIncluded}">Blue Belt
+                </ion-button>
             </ion-col>
         </ion-row>
 
         <ion-row>
             <ion-col size-sm="8" offset-sm="2">
-                <ion-button expand="full" class="blue-background stripe stripe-red">Red Stripe</ion-button>
+                <ion-button expand="full" class="blue-background stripe stripe-red"
+                            [routerLink]="['/select-test-type', '80']"
+                            [queryParams]="{'isLowerBeltsIncluded': isLowerBeltsIncluded}">Red Stripe
+                </ion-button>
             </ion-col>
         </ion-row>
 
         <ion-row>
             <ion-col size-sm="8" offset-sm="2">
-                <ion-button expand="full" class="red-background">Red Stripe</ion-button>
+                <ion-button expand="full" class="red-background" [routerLink]="['/select-test-type', '90']"
+                            [queryParams]="{'isLowerBeltsIncluded': isLowerBeltsIncluded}">Red Stripe
+                </ion-button>
             </ion-col>
         </ion-row>
 
         <ion-row>
             <ion-col size-sm="8" offset-sm="2">
-                <ion-button expand="full" class="red-background stripe stripe-black">Black Stripe</ion-button>
+                <ion-button expand="full" class="red-background stripe stripe-black"
+                            [routerLink]="['/select-test-type', '100']"
+                            [queryParams]="{'isLowerBeltsIncluded': isLowerBeltsIncluded}">Black Stripe
+                </ion-button>
             </ion-col>
         </ion-row>
 
         <ion-row>
             <ion-col size-sm="8" offset-sm="2">
-                <ion-button expand="full" class="black-background">I DEGREE</ion-button>
+                <ion-button expand="full" class="black-background" [routerLink]="['/select-test-type', '110']"
+                            [queryParams]="{'isLowerBeltsIncluded': isLowerBeltsIncluded}">I DEGREE
+                </ion-button>
             </ion-col>
         </ion-row>
 
         <ion-row>
             <ion-col size-sm="8" offset-sm="2">
-                <ion-button expand="full" class="black-background">II DEGREE</ion-button>
+                <ion-button expand="full" class="black-background" [routerLink]="['/select-test-type', '120']"
+                            [queryParams]="{'isLowerBeltsIncluded': isLowerBeltsIncluded}">II DEGREE
+                </ion-button>
             </ion-col>
         </ion-row>
 
         <ion-row>
             <ion-col size-sm="8" offset-sm="2">
-                <ion-button expand="full" class="black-background">III DEGREE</ion-button>
+                <ion-button expand="full" class="black-background" [routerLink]="['/select-test-type', '130']"
+                            [queryParams]="{'isLowerBeltsIncluded': isLowerBeltsIncluded}">III DEGREE
+                </ion-button>
             </ion-col>
         </ion-row>
 
         <ion-row>
             <ion-col size-sm="8" offset-sm="2">
-                <ion-button expand="full" class="black-background">IV DEGREE</ion-button>
+                <ion-button expand="full" class="black-background" [routerLink]="['/select-test-type', '140']"
+                            [queryParams]="{'isLowerBeltsIncluded': isLowerBeltsIncluded}">IV DEGREE
+                </ion-button>
             </ion-col>
         </ion-row>
 
         <ion-row>
             <ion-col size-sm="8" offset-sm="2">
-                <ion-button expand="full" class="black-background">V DEGREE</ion-button>
+                <ion-button expand="full" class="black-background" [routerLink]="['/select-test-type', '150']"
+                            [queryParams]="{'isLowerBeltsIncluded': isLowerBeltsIncluded}">V DEGREE
+                </ion-button>
             </ion-col>
         </ion-row>
 
         <ion-row>
             <ion-col size-sm="8" offset-sm="2">
-                <ion-button expand="full" class="black-background">VI DEGREE</ion-button>
+                <ion-button expand="full" class="black-background" [routerLink]="['/select-test-type', '160']"
+                            [queryParams]="{'isLowerBeltsIncluded': isLowerBeltsIncluded}">VI DEGREE
+                </ion-button>
             </ion-col>
         </ion-row>
     </ion-grid>
