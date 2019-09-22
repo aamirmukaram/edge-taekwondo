@@ -1,22 +1,22 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SelectTestTypePage } from './select-test-type.page';
+import { SelectQuestionCategoryPage } from './select-question-category.page';
 
-describe('SelectTestTypePage', () => {
-  let component: SelectTestTypePage;
-  let fixture: ComponentFixture<SelectTestTypePage>;
+describe('SelectQuestionCategoryPage', () => {
+  let component: SelectQuestionCategoryPage;
+  let fixture: ComponentFixture<SelectQuestionCategoryPage>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SelectTestTypePage ],
+      declarations: [ SelectQuestionCategoryPage ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SelectTestTypePage);
+    fixture = TestBed.createComponent(SelectQuestionCategoryPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
