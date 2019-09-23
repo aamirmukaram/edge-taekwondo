@@ -60,10 +60,9 @@ export const questionsList = [
     questions: [
       {
         questionCategoryId: 10,
-        questionTypeId: 10,
+        questionTypeId: 20,
         question: {
-          text: 'This is a MCQs Question. Question id 3',
-          options: ['A', 'B', 'C', 'D'],
+          text: 'This is a _______ Question. Question id 3',
           answer: 'A'
         },
       },

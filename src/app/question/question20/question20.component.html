@@ -1,0 +1,7 @@
+<ion-text color="primary ion-text-center">
+    <h4>{{questionItem.text}}</h4>
+</ion-text>
+
+<ion-input clearInput [(ngModel)]="typedAnswer"></ion-input>
+
+<ion-button expand="full" (click)="submitAnswer()" [disabled]="!typedAnswer">Submit</ion-button>
