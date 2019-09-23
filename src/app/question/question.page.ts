@@ -29,7 +29,7 @@ export class QuestionPage implements OnInit {
         return true;
       }
 
-      if (this.isLowerBeltsIncluded && this.selectedLevel < question.levelId) {
+      if (this.isLowerBeltsIncluded && question.levelId < this.selectedLevel) {
         return true;
       }
       return false;
@@ -44,11 +44,17 @@ export class QuestionPage implements OnInit {
   }
 
   public onSuccessAnswer() {
-
+    this.nextQuestion();
+    console.log('onSuccessAnswer');
   }
 
   public onFailAnswer() {
+    this.nextQuestion();
+    console.log('onFailAnswer');
+  }
 
+  private nextQuestion() {
+    this.currentQuestionNumber++;
   }
 
 }
