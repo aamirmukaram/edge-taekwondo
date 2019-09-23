@@ -45,5 +45,33 @@ export const questionsList = [
         }
       }
     ]
-  }
+  },
+  {
+    levelId: 20,
+    questions: [
+      {
+        questionCategoryId: 10,
+        questionTypeId: 10,
+        question: {
+          text: 'This is a MCQs Question',
+          options: ['A', 'B', 'C', 'D'],
+          answer: 'A'
+        }
+      }
+    ]
+  },
+  {
+    levelId: 10,
+    questions: [
+      {
+        questionCategoryId: 10,
+        questionTypeId: 10,
+        question: {
+          text: 'This is a MCQs Question',
+          options: ['A', 'B', 'C', 'D'],
+          answer: 'A'
+        }
+      }
+    ]
+  },
 ];
