@@ -1,17 +1,34 @@
 # Commands
 
-- ionic build
-
 
 - ionic capacitor add android
 
-
+- ionic build
 - ionic capacitor copy android
-
-
-- npx cap open android
-
+- ionic capacitor open android
+OR
+- ionic capacitor run android
 
 - ionic build && ionic capacitor copy android
 
+------------------------------------------------------
 
+- ionic capacitor add ios
+
+- ionic build
+- ionic capacitor copy ios
+OR
+- ionic capacitor run ios
+
+- ionic capacitor open ios
+
+
+- ionic build --prod –release
+
+
+- ionic link
+
+
+- Can use appFLow to create online builds but it is paid. In free package creating ios builds is not possible.
+
+- Application can be simulated on IOS and Android
